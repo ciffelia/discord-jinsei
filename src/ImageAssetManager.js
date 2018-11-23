@@ -1,5 +1,5 @@
 class ImageAssetManager {
-  static _PickRandomItemFromArray(array) {
+  static _PickRandomItemFromArray (array) {
     const index = Math.floor(Math.random() * array.length)
     return array[index]
   }
