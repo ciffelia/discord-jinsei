@@ -1,0 +1,16 @@
+{
+  "name": "discord-jinsei",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "standard",
+    "fix": "standard --fix"
+  },
+  "dependencies": {
+    "discord-rpc": "^3.0.1",
+    "luxon": "^1.7.1"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
