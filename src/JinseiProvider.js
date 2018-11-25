@@ -1,4 +1,5 @@
 const { DateTime } = require('luxon')
+const config = require('../config')
 
 class JinseiProvider {
   static GetElapsed () {
@@ -6,11 +7,6 @@ class JinseiProvider {
   }
 }
 
-JinseiProvider.birthday = DateTime.fromObject({
-  year: 2002,
-  month: 2,
-  day: 3,
-  zone: 'Asia/Tokyo'
-})
+JinseiProvider.birthday = DateTime.fromObject(config.birth)
 
 module.exports = JinseiProvider

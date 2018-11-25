@@ -2,10 +2,11 @@ process.on('unhandledRejection', e => { throw e })
 
 const RPCGateway = require('./RPCGateway')
 const JinseiProvider = require('./JinseiProvider')
-const ImageAssetManager = require('./ImageAssetManager');
+const ImageAssetManager = require('./ImageAssetManager')
+const config = require('../config');
 
 (async () => {
-  const rpcGateway = new RPCGateway('513770980611457025')
+  const rpcGateway = new RPCGateway(config.clientId)
   await rpcGateway.login()
 
   const action = () => {
