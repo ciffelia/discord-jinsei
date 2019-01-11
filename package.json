@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "discord-rpc": "^3.0.1",
-    "luxon": "^1.7.1"
+    "luxon": "^1.10.0"
   },
   "devDependencies": {
     "standard": "^12.0.1"
