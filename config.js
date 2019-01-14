@@ -1,11 +1,10 @@
 module.exports = {
   clientId: '513770980611457025',
 
-  birth: {
+  birthdate: {
     year: 2002,
     month: 2,
-    day: 3,
-    zone: 'Asia/Tokyo'
+    day: 3
   },
 
   /*
