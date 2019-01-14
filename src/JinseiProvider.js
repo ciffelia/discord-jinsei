@@ -9,6 +9,16 @@ class JinseiProvider {
   static GetElapsed () {
     return this.Today().diff(this.Birthdate)
   }
+
+  static GetDurationToNextBirthday () {
+    const today = this.Today()
+
+    const birthdayInThisYear = this.Birthdate.set({ year: today.year })
+    const birthdayInNextYear = this.Birthdate.set({ year: today.year + 1 })
+    const nextBirthday = today <= birthdayInThisYear ? birthdayInThisYear : birthdayInNextYear
+
+    return nextBirthday.diff(today)
+  }
 }
 
 JinseiProvider.Birthdate = DateTime.fromObject(config.birthdate)

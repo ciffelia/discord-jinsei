@@ -3,6 +3,7 @@ process.on('unhandledRejection', e => { throw e })
 const RPCGateway = require('./RPCGateway')
 const JinseiProvider = require('./JinseiProvider')
 const ImageAssetManager = require('./ImageAssetManager')
+const formatDuration = require('./formatDuration')
 const config = require('../config');
 
 (async () => {
@@ -11,13 +12,14 @@ const config = require('../config');
 
   const action = () => {
     const elapsed = JinseiProvider.GetElapsed()
+    const toNextBirthday = JinseiProvider.GetDurationToNextBirthday()
+
+    const details = `🐣${formatDuration(elapsed)}経過`
+    const state = toNextBirthday.valueOf() === 0 ? `🎉今日が誕生日です！` : `🎂誕生日まで${formatDuration(toNextBirthday)}`
+
     const [largeImageKey, largeImageText] = ImageAssetManager.PickRandomAsset()
 
-    rpcGateway.updateActivity({
-      state: elapsed.toFormat('y年Mヶ月d日経過'),
-      largeImageKey,
-      largeImageText
-    })
+    rpcGateway.updateActivity({ details, state, largeImageKey, largeImageText })
   }
 
   setInterval(action, 1000 * 15)
