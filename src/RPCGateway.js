@@ -30,8 +30,16 @@ class RPCGateway {
     }
   }
 
+  destroy () {
+    this.client.destroy()
+  }
+
   updateActivity (activity) {
     return this.client.setActivity(activity)
+  }
+
+  clearActivity () {
+    this.client.clearActivity()
   }
 }
 

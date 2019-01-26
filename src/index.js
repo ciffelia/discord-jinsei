@@ -1,16 +1,20 @@
 process.on('unhandledRejection', e => { throw e })
 
+const { app } = require('electron')
 const RPCGateway = require('./RPCGateway')
 const JinseiProvider = require('./JinseiProvider')
 const ImageAssetManager = require('./ImageAssetManager')
+const TrayService = require('./TrayService')
 const formatDuration = require('./formatDuration')
-const config = require('../config');
+const config = require('../config')
+
+let trayService = null;
 
 (async () => {
   const rpcGateway = new RPCGateway(config.clientId)
   await rpcGateway.login()
 
-  const action = () => {
+  const updatePresence = () => {
     const elapsed = JinseiProvider.GetElapsed()
     const toNextBirthday = JinseiProvider.GetDurationToNextBirthday()
 
@@ -21,7 +25,34 @@ const config = require('../config');
 
     rpcGateway.updateActivity({ details, state, largeImageKey, largeImageText })
   }
+  const removePresence = () => {
+    rpcGateway.clearActivity()
+  }
 
-  setInterval(action, 1000 * 15)
-  action()
+  let interval = null
+
+  const activate = () => {
+    if (interval) clearInterval(interval)
+    interval = setInterval(updatePresence, 15 * 1000)
+    updatePresence()
+  }
+  const deactivate = () => {
+    if (interval) clearInterval(interval)
+    interval = null
+    removePresence()
+  }
+  const quit = () => {
+    rpcGateway.destroy()
+    app.quit()
+  }
+
+  activate()
+
+  trayService = new TrayService()
+
+  trayService.on('turnOn', activate)
+  trayService.on('turnOff', deactivate)
+  trayService.on('quit', quit)
+
+  trayService.start()
 })()
