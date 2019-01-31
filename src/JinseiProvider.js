@@ -7,7 +7,7 @@ class JinseiProvider {
   }
 
   static GetElapsed () {
-    return this.Today().diff(this.Birthdate)
+    return this.Today().diff(this.Birthdate, ['years', 'months', 'days'])
   }
 
   static GetDurationToNextBirthday () {
