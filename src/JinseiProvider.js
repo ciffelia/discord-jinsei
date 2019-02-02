@@ -17,7 +17,7 @@ class JinseiProvider {
     const birthdayInNextYear = this.Birthdate.set({ year: today.year + 1 })
     const nextBirthday = today <= birthdayInThisYear ? birthdayInThisYear : birthdayInNextYear
 
-    return nextBirthday.diff(today)
+    return nextBirthday.diff(today, ['years', 'months', 'days'])
   }
 }
 
