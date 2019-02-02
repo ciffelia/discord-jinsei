@@ -1,6 +1,6 @@
 const formatDuration = duration => {
   // https://github.com/moment/luxon/issues/328
-  const { years, months, days } = duration.shiftTo('years', 'months', 'days')
+  const { years, months, days } = duration
 
   let text = ''
 
