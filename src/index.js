@@ -19,7 +19,7 @@ let trayService = null;
     const toNextBirthday = JinseiProvider.GetDurationToNextBirthday()
 
     const details = `🐣${formatDuration(elapsed)}経過`
-    const state = toNextBirthday.valueOf() === 0 ? `🎉今日が誕生日です！` : `🎂誕生日まで${formatDuration(toNextBirthday)}`
+    const state = toNextBirthday.valueOf() === 0 ? '🎉今日が誕生日です！' : `🎂誕生日まで${formatDuration(toNextBirthday)}`
 
     const [largeImageKey, largeImageText] = ImageAssetManager.PickRandomAsset()
 
