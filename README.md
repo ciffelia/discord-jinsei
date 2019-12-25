@@ -1,5 +1,5 @@
-# discord-jinsei
-[![Build Status](https://travis-ci.com/ciffelia/discord-jinsei.svg?branch=master)](https://travis-ci.com/ciffelia/discord-jinsei)
-[![Greenkeeper badge](https://badges.greenkeeper.io/ciffelia/discord-jinsei.svg)](https://greenkeeper.io/)
+# [discord-jinsei](https://twitter.com/ciffelia/status/1064491457690529792)
+[![CI Status](https://github.com/ciffelia/discord-jinsei/workflows/CI/badge.svg?branch=master)](https://github.com/ciffelia/discord-jinsei/actions?query=workflow%3ACI+branch%3Amaster)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ciffelia/discord-jinsei)](https://dependabot.com)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)  
 ![screenshot](https://github.com/ciffelia/discord-jinsei/raw/master/screenshot.png)
