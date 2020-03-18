@@ -4,7 +4,7 @@ const formatDuration = duration => {
   let text = ''
 
   if (years > 0) text += `${years}年`
-  if (months > 0) text += `${months}ヶ月`
+  if (months > 0) text += `${months}か月`
   if (days > 0) text += `${days}日`
 
   return text
