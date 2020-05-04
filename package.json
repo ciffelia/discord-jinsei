@@ -8,7 +8,7 @@
     "fix": "standard --fix"
   },
   "dependencies": {
-    "discord-rpc": "^3.1.0",
+    "discord-rpc": "^3.1.1",
     "luxon": "^1.22.0"
   },
   "devDependencies": {
