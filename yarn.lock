@@ -333,10 +333,10 @@ detect-node@^2.0.4:
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.0.4.tgz#014ee8f8f669c5c58023da64b8179c083a28c46c"
   integrity sha512-ZIzRpLJrOj7jjP2miAtgqIfmzbxa4ZOr5jJc601zklsfEx9oTzmmj2nVpIPRpNlRTIh8lc1kyViIY7BWSGNmKw==
 
-discord-rpc@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/discord-rpc/-/discord-rpc-3.1.0.tgz#dcdc68224f92878897b0be8e334435c220d55d10"
-  integrity sha512-/j0yLDBsuGX/QmxDIbbmKl5hqOQMy57O+KUJJdti6fcpVygn7gCJNPuNNHO6ZebPqGU8qFcCs09crIRljShTWQ==
+discord-rpc@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/discord-rpc/-/discord-rpc-3.1.3.tgz#9ba77b2679e3d069d400247da58333c0c87645fb"
+  integrity sha512-V081xCPFm8YDNLJYJv3Vo2BrCv/Knh0mdvq37RIN1keh7VGpf7s1kypaFDIYiuUmAlZXI5pupthF5hCrx/CzhA==
   dependencies:
     node-fetch "2.6.0"
     ws "7.1.2"
@@ -366,10 +366,10 @@ duplexer3@^0.1.4:
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
-electron@^8.1.1:
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-8.1.1.tgz#737a5af03c7b4af60b49dff7bfe1203fcbd5bf89"
-  integrity sha512-t+5zzFo7VOgckJc9YpImHJkpqeWxwpmEjywWbAa4IT5MULS7h1XU52H9gMswK/y8xc5lBNwxLhJSty/15+gi1A==
+electron@^9.1.2:
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-9.1.2.tgz#bfa26d6b192ea13abb6f1461371fd731a8358988"
+  integrity sha512-xEYadr3XqIqJ4ktBPo0lhzPdovv4jLCpiUUGc2M1frUhFhwqXokwhPaTUcE+zfu5+uf/ONDnQApwjzznBsRrgQ==
   dependencies:
     "@electron/get" "^1.0.1"
     "@types/node" "^12.0.12"
@@ -472,10 +472,10 @@ eslint-config-standard-jsx@8.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-standard-jsx/-/eslint-config-standard-jsx-8.1.0.tgz#314c62a0e6f51f75547f89aade059bec140edfc7"
   integrity sha512-ULVC8qH8qCqbU792ZOO6DaiaZyHNS/5CZt3hKqHkEhVlhPEPN3nfBqqxJCyp59XrjIBZPu1chMYe9T2DXZ7TMw==
 
-eslint-config-standard@14.1.0:
-  version "14.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-14.1.0.tgz#b23da2b76fe5a2eba668374f246454e7058f15d4"
-  integrity sha512-EF6XkrrGVbvv8hL/kYa/m6vnvmUT+K82pJJc4JJVMM6+Qgqh0pnwprSxdduDLB9p/7bIxD+YV5O0wfb8lmcPbA==
+eslint-config-standard@14.1.1:
+  version "14.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-14.1.1.tgz#830a8e44e7aef7de67464979ad06b406026c56ea"
+  integrity sha512-Z9B+VR+JIXRxz21udPTL9HpFMyoMUEeX1G251EQ6e05WD9aPVtVBn09XUmZ259wCMlCDmYDSZG62Hhm+ZTJcUg==
 
 eslint-import-resolver-node@^0.3.2:
   version "0.3.2"
@@ -1144,10 +1144,10 @@ lowercase-keys@^2.0.0:
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-2.0.0.tgz#2603e78b7b4b0006cbca2fbcc8a3202558ac9479"
   integrity sha512-tqNXrS78oMOE73NMxK4EMLQsQowWf8jKooH9g7xPavRT706R6bkQJ6DY2Te7QukaZsulxa30wQ7bk0pm4XiHmA==
 
-luxon@^1.22.0:
-  version "1.22.0"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.22.0.tgz#639525c7c69e594953c7b142794466b8ea85b868"
-  integrity sha512-3sLvlfbFo+AxVEY3IqxymbumtnlgBwjDExxK60W3d+trrUzErNAz/PfvPT+mva+vEUrdIodeCOs7fB6zHtRSrw==
+luxon@^1.24.1:
+  version "1.24.1"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.24.1.tgz#a8383266131ed4eaed4b5f430f96f3695403a52a"
+  integrity sha512-CgnIMKAWT0ghcuWFfCWBnWGOddM0zu6c4wZAWmD0NN7MZTnro0+833DF6tJep+xlxRPg4KtsYEHYLfTMBQKwYg==
 
 matcher@^2.0.0:
   version "2.1.0"
@@ -1698,13 +1698,13 @@ standard-engine@^12.0.0:
     minimist "^1.1.0"
     pkg-conf "^3.1.0"
 
-standard@^14.3.3:
-  version "14.3.3"
-  resolved "https://registry.yarnpkg.com/standard/-/standard-14.3.3.tgz#2b16559d892cb29e29a854eb6ed15d43e44759c8"
-  integrity sha512-HBEAD5eVXrr2o/KZ3kU8Wwaxw90wzoq4dOQe6vlRnPoQ6stn4LCLRLBBDp0CjH/aOTL9bDZJbRUOZcBaBnNJ0A==
+standard@^14.3.4:
+  version "14.3.4"
+  resolved "https://registry.yarnpkg.com/standard/-/standard-14.3.4.tgz#748e80e8cd7b535844a85a12f337755a7e3a0f6e"
+  integrity sha512-+lpOkFssMkljJ6eaILmqxHQ2n4csuEABmcubLTb9almFi1ElDzXb1819fjf/5ygSyePCq4kU2wMdb2fBfb9P9Q==
   dependencies:
     eslint "~6.8.0"
-    eslint-config-standard "14.1.0"
+    eslint-config-standard "14.1.1"
     eslint-config-standard-jsx "8.1.0"
     eslint-plugin-import "~2.18.0"
     eslint-plugin-node "~10.0.0"
