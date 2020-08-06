@@ -21,6 +21,6 @@ class JinseiProvider {
   }
 }
 
-JinseiProvider.Birthdate = DateTime.fromObject(config.birthdate)
+JinseiProvider.Birthdate = DateTime.fromObject(config.birth)
 
 module.exports = JinseiProvider
