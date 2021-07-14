@@ -13,11 +13,9 @@ class TrayService extends EventEmitter {
   }
 
   start () {
-    if (app.isReady()) {
+    app.whenReady().then(() => {
       this._handleAppReady()
-    } else {
-      app.once('ready', this._handleAppReady)
-    }
+    })
   }
 
   _generateTurnedOnMenu () {

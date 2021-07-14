@@ -7,21 +7,5 @@ module.exports = {
     day: 3
   },
 
-  /*
-    https://twitter.com/mangatimekirara/status/975387610481750016
-    https://twitter.com/mangatimekirara/status/1008728919472631810
-    https://twitter.com/mangatimekirara/status/1064173036029456384
-   */
-  imageAssets: {
-    cat001: 'にゃーん',
-    cat002: 'にゃー',
-    cat003: 'にゃっ',
-    cat004: 'にゃーご',
-    cat005: 'にゃう',
-    cat006: 'ふにゃー',
-    cat007: 'にゃふ',
-    cat008: 'ふしゃー',
-    cat009: 'みゃー',
-    cat010: 'meow'
-  }
+  imageAssets: ['cat001', 'cat002', 'cat003', 'cat004', 'cat005', 'cat006', 'cat007', 'cat008', 'cat009', 'cat010']
 }
