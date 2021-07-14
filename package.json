@@ -7,8 +7,12 @@
     "watch": "tsc --watch",
     "start": "electron .",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint --ext .js,.ts .",
-    "fix": "eslint --fix --ext .js,.ts ."
+    "lint:prettier": "prettier --check .",
+    "lint:eslint": "eslint --ext .js,.ts .",
+    "lint": "npm-run-all lint:*",
+    "fix:prettier": "prettier --write .",
+    "fix:eslint": "eslint --fix --ext .js,.ts .",
+    "fix": "npm-run-all fix:*"
   },
   "dependencies": {
     "discord-rpc": "^4.0.1",
@@ -22,9 +26,12 @@
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "electron": "^13.1.6",
     "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard-with-typescript": "^20.0.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1"
+    "eslint-plugin-promise": "^4.3.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2"
   }
 }
