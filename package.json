@@ -14,7 +14,7 @@
     "watch": "tsc --watch",
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder",
+    "dist": "electron-builder --publish=never",
     "typecheck": "tsc --noEmit",
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint --ext .js,.ts .",
