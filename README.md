@@ -5,7 +5,7 @@
 
 ![screenshot](https://user-images.githubusercontent.com/15273128/125628521-1a035c64-5711-461a-9338-5a6a2f962e28.png)
 
-# Build
+## Build
 
 ```bash
 yarn install
