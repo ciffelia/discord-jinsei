@@ -3,7 +3,7 @@ import path from 'path'
 import { app, Menu, Tray } from 'electron'
 
 class TrayService extends EventEmitter {
-  static readonly iconPath = path.join(__dirname, '../assets/icon.png')
+  static readonly iconPath = path.join(__dirname, '../buildResources/icon.png')
 
   private tray?: Tray
 
