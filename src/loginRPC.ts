@@ -5,7 +5,9 @@ const createRPCClient = (): DiscordRPC.Client => {
   return new DiscordRPC.Client({ transport: 'ipc' })
 }
 
-const tryLoginRPC = async (clientId: string): Promise<DiscordRPC.Client | null> => {
+const tryLoginRPC = async (
+  clientId: string
+): Promise<DiscordRPC.Client | null> => {
   const client = createRPCClient()
   try {
     return await client.login({ clientId })

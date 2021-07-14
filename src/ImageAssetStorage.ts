@@ -1,11 +1,9 @@
 import pickRandom from './pickRandom'
 
 class ImageAssetStorage {
-  constructor (
-    private readonly assetKeyList: string[]
-  ) {}
+  constructor(private readonly assetKeyList: string[]) {}
 
-  pickOne (): string {
+  pickOne(): string {
     return pickRandom(this.assetKeyList)
   }
 }

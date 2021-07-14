@@ -7,14 +7,14 @@ class TrayService extends EventEmitter {
 
   private tray?: Tray
 
-  start (): void {
+  start(): void {
     // eslint-disable-next-line @typescript-eslint/no-floating-promises
     app.whenReady().then(() => {
       this.handleAppReady()
     })
   }
 
-  private generateTurnedOnMenu (): Menu {
+  private generateTurnedOnMenu(): Menu {
     return Menu.buildFromTemplate([
       { label: 'ON', type: 'radio', checked: true },
       { label: 'OFF', type: 'radio', click: this.handleOffClick.bind(this) },
@@ -23,7 +23,7 @@ class TrayService extends EventEmitter {
     ])
   }
 
-  private generateTurnedOffMenu (): Menu {
+  private generateTurnedOffMenu(): Menu {
     return Menu.buildFromTemplate([
       { label: 'ON', type: 'radio', click: this.handleOnClick.bind(this) },
       { label: 'OFF', type: 'radio', checked: true },
@@ -32,23 +32,23 @@ class TrayService extends EventEmitter {
     ])
   }
 
-  private handleAppReady (): void {
+  private handleAppReady(): void {
     this.tray = new Tray(TrayService.iconPath)
     this.tray.setToolTip('discord-jinsei')
     this.tray.setContextMenu(this.generateTurnedOnMenu())
   }
 
-  private handleOnClick (): void {
+  private handleOnClick(): void {
     this.tray?.setContextMenu(this.generateTurnedOnMenu())
     this.emit('turnOn')
   }
 
-  private handleOffClick (): void {
+  private handleOffClick(): void {
     this.tray?.setContextMenu(this.generateTurnedOffMenu())
     this.emit('turnOff')
   }
 
-  private handleQuitClick (): void {
+  private handleQuitClick(): void {
     this.emit('quit')
   }
 }

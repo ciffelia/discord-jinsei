@@ -2,7 +2,7 @@ import loadConfig from './loadConfig'
 import DiscordJinsei from './DiscordJinsei'
 import TrayService from './TrayService'
 
-process.on('unhandledRejection', err => {
+process.on('unhandledRejection', (err) => {
   console.log(err)
   process.exit(1)
 })
