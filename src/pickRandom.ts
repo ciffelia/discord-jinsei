@@ -1,6 +1,6 @@
-const pickRandom = (array) => {
+const pickRandom = <T>(array: T[]): T => {
   const index = Math.floor(Math.random() * array.length)
   return array[index]
 }
 
-module.exports = pickRandom
+export default pickRandom

@@ -1,4 +1,6 @@
-const formatDuration = duration => {
+import { Duration } from 'luxon'
+
+const formatDuration = (duration: Duration): string => {
   const { years, months, days } = duration
 
   let text = ''
@@ -10,4 +12,4 @@ const formatDuration = duration => {
   return text
 }
 
-module.exports = formatDuration
+export default formatDuration

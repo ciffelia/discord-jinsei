@@ -1,11 +1,11 @@
-const DiscordRPC = require('discord-rpc')
-const sleep = require('./sleep')
+import DiscordRPC from 'discord-rpc'
+import sleep from './sleep'
 
-const createRPCClient = () =>{
+const createRPCClient = (): DiscordRPC.Client => {
   return new DiscordRPC.Client({ transport: 'ipc' })
 }
 
-const tryLoginRPC = async (clientId) => {
+const tryLoginRPC = async (clientId: string): Promise<DiscordRPC.Client | null> => {
   const client = createRPCClient()
   try {
     return await client.login({ clientId })
@@ -15,7 +15,7 @@ const tryLoginRPC = async (clientId) => {
   }
 }
 
-const loginRPC = async (clientId) => {
+const loginRPC = async (clientId: string): Promise<DiscordRPC.Client> => {
   while (true) {
     const client = await tryLoginRPC(clientId)
 
@@ -27,4 +27,4 @@ const loginRPC = async (clientId) => {
   }
 }
 
-module.exports = loginRPC
+export default loginRPC
